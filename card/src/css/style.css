@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    width: 1200px;
+    height: 700px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container__contenido {
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    width: 600PX;
+    height: 400PX;
+    border-radius: 10px;
+    
+}
+.container__contenido::after{
+position: absolute;
+top: 0;
+left: 0;
+content: ' ';
+width: 100%;
+height: 100%;
+background-color: rgba(134, 139, 143, 0.288);
+box-shadow: 0 0 10px 10px rgba(121, 123, 124, 0.281);
+filter: blur(10px);
+z-index: -1;
+
+}
+.img__pricipal{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+}
+.img__pricipal, img{
+    display: flex;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.contenido{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.boton{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 10%;
+    bottom: 30px;
+    left: 330px;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: whitesmoke;
+    font-size: 15px;
+    
+}
+.boton span img{
+width: 18px;
+height: 15px;
+top: 10px;
+left: 60px;
+}
+.pretitulo{
+    display: flex;
+    position: absolute;
+    top: 35px;
+    right: -100px;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    
+}
+.titulo{
+    display: flex;
+    position: absolute;
+    top:60px;
+    right: -200px;
+    
+}
+.parrafo{
+    display: flex;
+    position: absolute;
+    top:180px;
+    right: -240px;
+    color: hsl(229, 9%, 55%);
+}
+.precio{
+    display: flex;
+    position: absolute;
+    top:270px;
+    right: -155px;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+.precio p{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: -75px;
+    color: hsl(228, 10%, 70%);
+    font-size: 15px;
+}
+
